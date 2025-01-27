@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IoT Elderly Health Monitoring System</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>IoT Health Monitoring System for Elderly</h1>
+    <div class="card">
+      <h2>Patient Information</h2>
+      <p>Name: <span id="patientName">Alice Johnson</span></p>
+      <p>Age: <span id="patientAge">78</span></p>
+    </div>
+
+    <div class="dashboard">
+      <div class="metric">
+        <h3>Heart Rate</h3>
+        <p><span id="heartRate">--</span> bpm</p>
+      </div>
+      <div class="metric">
+        <h3>Oxygen Level</h3>
+        <p><span id="oxygenLevel">--</span> %</p>
+      </div>
+      <div class="metric">
+        <h3>Body Temperature</h3>
+        <p><span id="bodyTemp">--</span> °C</p>
+      </div>
+    </div>
+
+    <div class="alerts">
+      <h2>Health Alerts</h2>
+      <p>Fall Detection: <span id="fallStatus">No Fall Detected</span></p>
+      <p>Medicine Reminder: <span id="medicineReminder">Take morning medication</span></p>
+    </div>
+
+    <button id="updateButton">Update Data</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
